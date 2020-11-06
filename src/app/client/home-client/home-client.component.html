@@ -1,0 +1,23 @@
+
+<div class="container">
+   <div class="row recherch">
+       <div class="input-group col">
+           <input type="search" placeholder="Recherch..." class="form-control" [(ngModel)]="userFilter.nom">
+       </div>
+   </div>
+</div>
+<div class="container bloc1">
+    <div class="row" >
+        <div class="col-4"  *ngFor="let medicament of medicaments | filterBy: userFilter">
+            <div class="card" style="width: 18rem;"  >
+                <img class="card-img-top"  src="http://localhost:3000/users/image/{{medicament?.image}}" alt="Card image cap" style="height: 200px;">
+                <div class="card-body">
+                  <h5 class="card-title">{{medicament?.nom}}</h5>
+                  <p >{{medicament?.description}}</p>
+                 <p>{{medicament?.prix}}</p>
+                 <button class="btn  btn-success" (click)="Ajoute(medicament?._id)" >Achte</button>
+                </div>
+              </div>
+        </div>
+    </div>
+</div>

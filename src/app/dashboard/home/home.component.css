@@ -1,0 +1,19 @@
+.heder{
+    
+    width: 100%;
+    height: 500px;
+    background-image: url("../../../assets/image/l.jpg");
+    background-size: 1400px 1200px; 
+    margin-top: 0%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    
+}
+.heder .titre{
+    text-align: center;
+    color: #000;
+   font-family: cursive; 
+    font-size: 20px;
+    margin-top: 150px;
+}

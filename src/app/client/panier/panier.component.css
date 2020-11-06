@@ -1,0 +1,15 @@
+.card{
+    width:80%;
+    height: 600px;
+    margin-left: 200px;
+    margin-top: 50px;
+}
+.card p input{
+ width: 42px;
+ height: 25px;
+}
+.btn{
+    width: 50%;
+    text-align: center;
+    margin-left: 50px;
+}

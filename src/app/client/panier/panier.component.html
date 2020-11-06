@@ -1,0 +1,49 @@
+<div class="container">
+  <div class="row">
+    <div class="col">
+      Bonjour {{client?.nom}}
+    </div>
+  </div>
+</div>
+<div class="container">
+  <div class="row card">
+      <div class="col">
+          <table>
+             <div  *ngFor="let panier of paniers">
+              <div *ngFor="let p of panier.panier">
+                <div *ngIf="p?.idClient === this.id_client">
+            <thead>
+                <tr>
+                 <td> Medicament</td>
+                 <td>Quntite</td>
+                 <td>prix</td>
+                 <td>total</td>
+                </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>{{panier?.nom}}</td>
+                <td><input type="number" min="0" max="100" [(ngModel)]="p.qnt"></td>
+                <td><input  placeholder="{{panier?.prix}}" [(ngModel)]="prix"></td>
+                <td> {{p.qnt *panier?.prix}}</td>
+              </tr>
+            </tbody>
+          </div>
+        </div>
+      </div>
+          </table>
+          <!-- <p> {{panier?.nom}}
+            <input type="number" min="0" max="100" [(ngModel)]="p.qnt">
+            <input  placeholder="{{panier?.prix}}" [(ngModel)]="prix">
+            <!-- {{panier?.prix}}
+            total = {{p.qnt *panier?.prix}}
+          </p> -->
+       
+      <!-- {{panier?.prix}} -->
+    </div>
+    <hr>
+    
+    <button class="btn" (click)="confirm()">Confirme</button><br>
+
+  </div>
+</div>

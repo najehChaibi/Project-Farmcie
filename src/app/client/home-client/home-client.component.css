@@ -1,0 +1,26 @@
+.recherch input{
+    border-radius: 20px;
+    width: 30%;
+    margin-top: 10px;
+    margin-left: 900px;
+    border: 0.8px #000 solid;
+}
+.bloc1{
+    margin-top: 20px;
+}
+/* .card{
+    border: 1px;
+} */
+.card{
+   margin-bottom: 50px;
+    text-align: center;
+    height: 400px;
+} 
+
+.card .btn{
+    
+    border: none;
+    text-align: center;
+    width: 70px;
+  
+}

@@ -1,0 +1,33 @@
+<div class="container">
+  <div class="row">
+    <div class="col">
+      <button class="btn" (click)="ajoute()">+ Ajouter</button>
+    </div>
+  </div>
+
+    <table class="table">
+        <thead >
+          <tr style= "color :cornflowerblue">
+            <th scope="col">Nom</th>
+            <th scope="col">categorie</th>
+            <th scope="col">Quantite</th>
+            <th scope="col">Date Fin</th>
+            <th scope="col">Prix</th>
+            <th scop="col">
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let m of medicaments">
+            <td>{{m.nom}}</td>
+            <td>{{m.categorie}}</td>
+            <td>{{m.quantite}}</td>
+            <td>{{m.date_fin}}</td>
+            <td>{{m.prix}}DT</td>
+            <td><button class="btn" (click)="detail(m._id)">D</button>
+              <button class="btn" (click)="modifier(m._id)">M</button>
+              <button class="btn" (click)="supprim(m._id)">S</button>
+              </td>
+          </tr>
+        </tbody>
+      </table>
+</div>

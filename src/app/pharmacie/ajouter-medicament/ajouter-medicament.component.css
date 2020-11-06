@@ -1,0 +1,12 @@
+.card{
+    width: 80%;
+    height: 730px;
+}
+.card form{
+    width: 100%;
+  
+}
+
+.card textarea{
+    width: 200px; 
+}

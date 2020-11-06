@@ -1,0 +1,9 @@
+.card{
+    width: 70%;
+    height: 350px;
+}
+.card .forma{
+    font-style: oblique;
+    size: 25px;
+    margin-bottom: 10px;
+}

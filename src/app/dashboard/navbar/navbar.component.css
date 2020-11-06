@@ -1,0 +1,38 @@
+
+
+nav .leftNav{
+   width: 42%;
+   float: left;
+}
+nav .leftNav{
+  text-align: center;
+ 
+}
+nav .rightNav{
+    width: 58%;
+    float: left;
+    margin-left: 400px;
+}
+nav .rightNav .ul{
+    padding: 10px;
+}
+
+nav .rightNav .ul .li{
+   padding-right: 3.5rem;
+    padding-left: 1.5rem;
+    margin-right: 80px; 
+    text-transform: uppercase;
+    cursor: pointer;
+    
+    font-size: 20px;
+    
+}
+
+nav .rightNav ul li:first-child { 
+    border-bottom: 3px solid #28a745; 
+    padding-bottom: 5px;
+}
+
+nav .rightNav ul li:hover { 
+    border-bottom: 3px solid #28a745; 
+    padding-bottom: 5px }

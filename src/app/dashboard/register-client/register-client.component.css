@@ -1,0 +1,34 @@
+
+.card{
+    width: 70%;
+    height: 500px;
+    margin-left: 200px;
+    margin-top: 40px;
+    padding: 15px;
+   
+}
+hr{
+    width: 80%;
+    font-size: 3px;
+    color: black;
+}
+ 
+.card img{
+    width:50%;
+    height: 150px;
+    margin-left: 0%;
+    
+}
+.card .btn{
+    margin-top: 40px;
+
+}
+.card[_ngcontent-kvs-c10] img[_ngcontent-kvs-c10] {
+    width: 50%;
+    height: 150px;
+    margin-left: 0;
+    /* margin-right: 68px; */
+}
+.float-right {
+    float: left !important;
+}

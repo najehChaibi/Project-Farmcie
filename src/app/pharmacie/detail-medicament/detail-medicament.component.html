@@ -1,0 +1,39 @@
+<div class="container">
+  <div class="card">
+    <div class="row">
+      <div class="col-6 image">
+       <img src="http://localhost:3000/users/image/{{medicaments?.image}}" style="width: 50%; height: 300px;">
+      </div>
+      <div class="col-6 forma">
+        <table class="table" style="width: 90%;">
+          <tbody>
+            <tr>
+              <td>Medicament</td>
+              <td>{{medicaments?.nom}}</td>
+              </tr>
+              <tr>
+                  <td>Description:</td>
+                  <td>{{medicaments?.description}}</td>
+              </tr>
+              <tr>
+                  <td>Categorie:</td>
+                  <td>{{medicaments?.categorie}}</td>
+              </tr>
+              <tr>
+                  <td>Quantite:</td>
+                  <td>{{medicaments?.quantite}}</td>
+              </tr>
+              <tr>
+                  <td>Prix:</td>
+                  <td>{{medicaments?.prix}}</td>
+              </tr>
+              <tr>
+                  <td>Date Fin:</td>
+                  <td>{{medicaments?.date_fin}}</td>
+              </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>
